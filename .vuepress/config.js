@@ -16,13 +16,6 @@ module.exports = {
                 { text: "IS481 Cloud Application Development", link: "/courses/is481/" },
             ]
           },
-      ],
-      sidebar: {
-        "/blogs/": [
-          "",
-          "/blog-001",
-          "/blog-002"
-        ]
-      }
+      ]
   }
 };
