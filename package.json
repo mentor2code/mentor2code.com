@@ -1,0 +1,13 @@
+{
+  "name": "mentor2code.com",
+  "description": "The official site of mentor2code.com",
+  "author": "Winai Nadee",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.2"
+  }
+}
