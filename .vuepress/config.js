@@ -7,7 +7,7 @@ module.exports = {
   themeConfig: {
       nav: [
           { text: "Home", link: "/" },
-          { text: "Blogs", link: "/blogs" },
+          { text: "Blogs", link: "/blogs/" },
           { text: "Courses", 
             items: [
                 { text: "IS322 Application Development Tool (B)", link: "/courses/is322/" },
@@ -16,6 +16,13 @@ module.exports = {
                 { text: "IS481 Cloud Application Development", link: "/courses/is481/" },
             ]
           },
-      ]
+      ],
+      sidebar: {
+        "/blogs/": [
+          "",
+          "/blog-001",
+          "/blog-002"
+        ]
+      }
   }
 };
