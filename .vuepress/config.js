@@ -2,6 +2,9 @@ module.exports = {
   title: "mentor2code",
   description: "A mentor who helps people to code.",
   base: "/",
+  head: [
+    ["link", { rel: "icon", href: "/assets/img/logo-small.png"}]
+  ],
   serviceWorker: true,
   updatePopup: true,
   themeConfig: {
