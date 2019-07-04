@@ -5,6 +5,7 @@ module.exports = {
   serviceWorker: true,
   updatePopup: true,
   themeConfig: {
+      logo: "/assets/img/logo-small.png",
       nav: [
           { text: "Home", link: "/" },
           { text: "Blogs", link: "/blogs/" },
