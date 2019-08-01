@@ -1,25 +1,37 @@
 module.exports = {
   title: "mentor2code",
-  description: "A mentor who helps people to code.",
   base: "/",
-  head: [
-    ["link", { rel: "icon", href: "/assets/img/logo-small.png"}]
-  ],
+  lastUpdated: "ปรับปรุงล่าสุดเมื่อ ",
+  head: [["link", { rel: "icon", href: "/assets/img/logo-small.png" }]],
+  markdown: {
+    lineNumbers: true
+  },
   serviceWorker: true,
   updatePopup: true,
   themeConfig: {
-      logo: "/assets/img/logo-small.png",
-      nav: [
-          { text: "Home", link: "/" },
-          { text: "Blogs", link: "/blogs/" },
-          { text: "Courses", 
-            items: [
-                { text: "IS322 Application Development Tool (B)", link: "/courses/is322/" },
-                { text: "IS361 Artificial Intelligence", link: "/courses/is361/" },
-                { text: "IS461 Tools for Data Analytics", link: "/courses/is461/" },
-                { text: "IS481 Cloud Application Development", link: "/courses/is481/" },
-            ]
-          },
-      ]
+    logo: "/assets/img/logo-small.png",
+    nav: [
+      { text: "หน้าแรก", link: "/" },
+      { text: "คอร์ส", items: buildCourseItems() },
+      { text: "บทความ", items: buildBlogItems() },
+    ]
   }
 };
+
+function buildBlogItems() {
+  return [
+    { text: "พฤติกรรมที่แข็งแรง", link: "/blogs/strong-habit/" },
+  ];
+}
+
+function buildCourseItems() {
+  return [
+    { text: "IS322 Application Development Tool (B)", link: "/courses/is322/" },
+    { text: "IS415 Information System Design", link: "/courses/is415/" },
+    { text: "IS457 Advanced Database Management", link: "/courses/is457/" },
+    { text: "IS613 Modern Business Management and Digital Technology", link: "/courses/is613/" },
+    // { text: "IS361 Artificial Intelligence", link: "/courses/is361/" },
+    // { text: "IS461 Tools for Data Analytics", link: "/courses/is461/" },
+    // { text: "IS481 Cloud Application Development", link: "/courses/is481/" }
+  ];
+}
