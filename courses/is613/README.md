@@ -11,8 +11,10 @@ sidebar: auto
 sidebarDepth: 2
 ---
 
-## IS613 Modern Business Management and Digital Technology
+# IS613 Modern Business Management and Digital Technology
 
-### Big Data
+## Big Data
 
-### Natural Language Processing & Chatbot
+## Natural Language Processing & Chatbot
+
+## เอกสารอ้างอิง

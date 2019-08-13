@@ -8,6 +8,4 @@ meta:
     content: คอร์ส Coding, Analysis, Design, Technology Mangement
 ---
 
-## คอร์ส
-
 <List folder="courses" />
