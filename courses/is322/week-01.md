@@ -52,7 +52,7 @@ npm -v
 - ตรวจสอบ git
 
 ```bash
-git -v
+git --version
 ```
 
 - ตรวจสอบความเรียบร้อยของ path

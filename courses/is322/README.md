@@ -60,14 +60,14 @@ sidebarDepth: 2
 npm config get prefix
 ```
 
-- กรณีที่ใช้คำสั่ง npm หรือ yarn ไม่ได้ ให้เพิ่ม path - C:\Users\{yourName}\AppData\Roaming\npm ไว้ในตัวแปร path ของ Windows โดยใช้คำสั่ง
+- กรณีที่ใช้คำสั่ง npm หรือ yarn ไม่ได้ ให้เพิ่ม path - C:\Users\%USER%\AppData\Roaming\npm ไว้ในตัวแปร path ของ Windows โดยใช้คำสั่ง
 
 ```bash
-set PATH=%PATH%;C:\Users\{yourName}\AppData\Roaming\npm
+set PATH=%PATH%;C:\Users\%USER%\AppData\Roaming\npm
 ```
 
-- กรณีที่ใช้คำสั่ง vue ไม่ได้ ให้เพิ่ม path - C:\Users\{yourName}\AppData\AppData\Local\Yarn\bin ไว้ในตัวแปร path ของ Windows โดยใช้คำสั่ง
+- กรณีที่ใช้คำสั่ง vue ไม่ได้ ให้เพิ่ม path - C:\Users\%USER%\AppData\AppData\Local\Yarn\bin ไว้ในตัวแปร path ของ Windows โดยใช้คำสั่ง
 
 ```bash
-set PATH=%PATH%;C:\Users\{yourName}\AppData\Local\Yarn\bin
+set PATH=%PATH%;C:\Users\%USER%\AppData\Local\Yarn\bin
 ```
