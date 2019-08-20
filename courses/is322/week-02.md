@@ -1,67 +1,102 @@
 ---
-title: การพัฒนาเว็บแอปพลิเคชัน
+title: พื้นฐาน HTML และ UI Design
 lang: th-TH
 tobeListed: false
 meta:
   - name: description
-    content: การพัฒนาเว็บแอปพลิเคชัน
+    content: พื้นฐาน HTML และ UI Design
   - name: keywords
-    content: การพัฒนาเว็บแอปพลิเคชัน
+    content: พื้นฐาน HTML และ UI Design
 sidebar: auto
 sidebarDepth: 3
 ---
 [กลับหน้าแรกของคอร์ส](/courses/is322/)
 
-## การพัฒนาเว็บแอปพลิเคชัน
+## พื้นฐาน HTML และ UI Design
 
-ในส่วนนี้จะกล่าวถึง Web application & Web architecture รวมไปถึงองค์ประกอบของการพัฒนา web application นอกจากนี้ยังมีเรื่องราวของการทำ version control และการเข้าถึง code ของ framework, tools, และ components ต่าง ๆ ที่มีการแบ่งปันผ่าน GitHub ซึ่งครอบคลุมถึงการติดตั้งและใช้งาน Visual Studio Code และทำความรู้จักกับ JavaScript Framework
+ในส่วนนี้จะกล่าวถึงหน้าที่ของ HTML ซึ่งเป็นองค์ประกอบหลักในการควบคุมโครงสร้าง และเนื้อหาของ web application โดยมี CSS ทำหน้าที่ในการจัดและตกแต่งรูปแบบในการแสดงผล UI
 
-### ภาษาที่ใช้
+### ขั้นตอนการติดตั้งเพิ่มเติม
 
-ภาษา [HTML](https://www.w3schools.com/html/)
+### ติดตั้ง boostrap ลงใน vue project
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-Put your content here.
-</body>
-</html>
+- ติดตั้ง bootstrap ผ่าน yarn
+
+```sh
+yarn add vue bootstrap-vue bootstrap
 ```
 
-ภาษา [CSS](https://www.w3schools.com/css/)
+- สร้าง folder ชื่อ plugins อยู่ level เดียวกับไฟล์ App.vue
 
-```css
-body {
-  background-color: lightblue;
-}
-
-h1 {
-  color: navy;
-  margin-left: 20px;
-}
-```
-
-ภาษา [JavaScript](https://www.w3schools.com/js/)
+- สร้างไฟล์ bootstrap-vue ใน plugins folder และโดยมี code ด้านล่าง
 
 ```js
-var myObj = {name: "John", age: 31, city: "New York"};
-var myJSON = JSON.stringify(myObj);
-window.location = "demo_json.php?x=" + myJSON;
+import Vue from 'vue';
+
+import BootstrapVue from 'bootstrap-vue';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+
+Vue.use(BootstrapVue);
 ```
 
-### กระบวนการทำงานของ Browser
+- แก้ไขไฟล์ main.js โดยเพิ่มบรรทัดที่ 3 ดังภาพ
 
-ตัวบราวเซอร์นั้นจะมีกระบวนการทำงาน หรือที่เรียกว่าการ render ตัวเนื้อหาของเว็บโดยมี input จาก 3 ส่วน คือ HTML, CSS และ JS ดังภาพ โดยบราวเซอร์ จะอ่านข้อมูลทั้ง 3 แบบแล้วนำมาสร้างเป็น DOM ก่อนที่จะ render ผลออกทางหน้าจอ
-![Browser Rendering](<https://i0.wp.com/storage.googleapis.com/blog-images-backup/1*VmD21Exnic6eQxj5xGrA-Q.png?resize=3812%2C1958&ssl=1>)
-ภาพจาก: [How browser rendering works — behind the scenes](<https://blog.logrocket.com/how-browser-rendering-works-behind-the-scenes-6782b0e8fb10/>)
+```js{3}
+import Vue from 'vue';
+import App from './App.vue';
+import './plugins/bootstrap-vue';
 
-![WebKit Flow](<https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png>)
+Vue.config.productionTip = false;
 
-ภาพจาก: [How Browsers Work: Behind the scenes of modern web browsers](<https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/>)
+new Vue({
+  render: h => h(App),
+}).$mount('#app');
+```
+
+- ทดสอบว่า boostrap ใช้งานได้ โดยการใส่โค้ดด้านล่างใน ไฟล์ HelloWorld.vue โดยแทรกระหว่าง tag template
+
+```html
+<template>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Column 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col">
+        <h3>Column 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+      <div class="col">
+        <h3>Column 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      </div>
+    </div>
+  </div>
+<template>
+```
+
+- ทดสอบโดยเปลี่ยน class จาก container เป็น container-fluid ดังภาพ
+
+```html
+<template>
+  <div class="container-fluid">
+  ...
+  </div>
+</template>
+```
+
+- สามารถอธิบายความแตกต่างได้หรือไม่?
+
+### ทดลอง bootstrap แบบต่างๆ
+
+- [Tables](https://www.w3schools.com/bootstrap4/bootstrap_tables.asp)
+- [Button](https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp)
+- [Progress Bars](https://www.w3schools.com/bootstrap4/bootstrap_progressbars.asp)
+- [Spinners](https://www.w3schools.com/bootstrap4/bootstrap_spinners.asp)
+- [Cards](https://www.w3schools.com/bootstrap4/bootstrap_cards.asp)
+- [Forms](https://www.w3schools.com/bootstrap4/bootstrap_forms.asp)
