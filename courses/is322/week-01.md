@@ -33,31 +33,31 @@ sidebarDepth: 3
 
 - ตรวจสอบ VS Code
 
-```bash
+```sh
 code -v
 ```
 
 - ตรวจสอบ node
 
-```bash
+```sh
 node -v
 ```
 
 - ตรวจสอบ npm
 
-```bash
+```sh
 npm -v
 ```
 
 - ตรวจสอบ git
 
-```bash
+```sh
 git --version
 ```
 
 - ตรวจสอบความเรียบร้อยของ path
 
-```bash
+```sh
 path
 
 PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\toolb\nodejs\;D:\toolb\git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;D:\toolb\code\bin;C:\Users\user\AppData\Roaming\npm
@@ -71,7 +71,7 @@ PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32
 
 - เปิดโปรแกรม cmd ขึ้นมา
 
-```bash
+```sh
 d:
 cd toolb
 mkdir workspace
@@ -81,7 +81,7 @@ mkdir workspace
 
 - ตรวจสอบว่าอยู่ที่ d:\toolb\workspace แล้วพิมพ์คำสั่ง
 
-```bash
+```sh
 code .
 ```
 
@@ -89,33 +89,45 @@ code .
 
 - ติดตั้ง yarn
 
-```bash
+```sh
 npm install -g yarn
 ```
 
 - ทดสอบว่า yarn ถูกติดตั้งเรียบร้อย
 
-```bash
+```sh
 yarn -v
+```
+
+- กรณีที่ใช้คำสั่ง npm หรือ yarn ไม่ได้ ให้เพิ่ม path - C:\Users\%USER%\AppData\Roaming\npm ไว้ในตัวแปร path ของ Windows โดยใช้คำสั่ง
+
+```sh
+set PATH=%PATH%;C:\Users\Administrator\AppData\Roaming\npm
 ```
 
 - ติดตั้ง Vue CLI
 
-```bash
+```sh
 yarn global add @vue/cli
 ```
 
 - ทดสอบว่า Vue CLI ถูกติดตั้งเรียบร้อย
 
-```bash
+```sh
 vue --version
+```
+
+- กรณีที่ใช้คำสั่ง vue ไม่ได้ ให้เพิ่ม path - C:\Users\%USER%\AppData\AppData\Local\Yarn\bin ไว้ในตัวแปร path ของ Windows โดยใช้คำสั่ง
+
+```sh
+set PATH=%PATH%;C:\Users\Administrator\AppData\Local\Yarn\bin
 ```
 
 ### 4. สร้าง web project  
 
 - ใช้ Vue CLI โดยเลือกค่า default ทั้งหมด
 
-```bash
+```sh
 vue create {ชื่อโปรเจ็ค}
 ```
 
@@ -125,7 +137,7 @@ vue create {ชื่อโปรเจ็ค}
 
 - เมื่อติดตั้งเรียบร้อย ให้ทำการทดสอบโดยใช้คำสั่งด้านล่าง
 
-```bash
+```sh
 cd myfirstsite
 yarn serve
 ```
@@ -184,15 +196,21 @@ export default {
 
 - สมัครสมาชิก GitHub
 
-- สร้าง repository บน GitHub ในที่นี้ใช้ชื่อ myfirstsite
+- ตั้งค่า git โดยใส่ชื่อ ชื่อสกุล และอีเมล์เดียวกับที่ลงทะเบียนไว้กับ GitHub
+
+```sh
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+```
+
+- สร้าง repository บน GitHub ในที่นี้ใช้ชื่อ wkxx-name (เปลี่ยนเลขทุกสัปดาห์ และใส่ชื่อของตัวเอง)
 
 - ทำการ initial git และ push ไฟล์โปรเจ็คทั้งหมดไปยัง GitHub
 
-```bash
-echo "# myfirstsite" >> README.md
+```sh
 git init
 git add .
 git commit -m "first commit"
-git remote add origin https://github.com/mentor2code/myfirstsite.git
+git remote add origin https://github.com/is322/wkxx-name.git
 git push -u origin master
 ```

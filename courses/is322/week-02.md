@@ -28,7 +28,7 @@ yarn add vue bootstrap-vue bootstrap
 
 - สร้าง folder ชื่อ plugins อยู่ level เดียวกับไฟล์ App.vue
 
-- สร้างไฟล์ bootstrap-vue ใน plugins folder และโดยมี code ด้านล่าง
+- สร้างไฟล์ bootstrap-vue.js ใน plugins folder และโดยมี code ด้านล่าง
 
 ```js
 import Vue from 'vue';
@@ -77,7 +77,7 @@ new Vue({
       </div>
     </div>
   </div>
-<template>
+</template>
 ```
 
 - ทดสอบโดยเปลี่ยน class จาก container เป็น container-fluid ดังภาพ
