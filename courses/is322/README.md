@@ -23,6 +23,8 @@ sidebarDepth: 2
 
 ## ภาษา CSS
 
+CSS หรือ Cascading Style Sheets นั้นทำหน้าในการ format รูปแบบของ HTML ที่จะแสดงผลบนหน้า web application โดยกลไกของ CSS นั้นประกอบไปด้วย selector และ declaration ซึ่ง CSS selector นั้นเป็นส่วนสำคัญที่ช่วยให้ web developer สามารถกำหนดได้ว่าส่วนไหนของ HTML นั้นที่ต้องการจะ apply CSS [รายละเอียด](/courses/is322/week-03.md)
+
 ## เรียนรู้ภาษา JavaScript (JS)
 
 ## รู้จัก JavaScript Framework
