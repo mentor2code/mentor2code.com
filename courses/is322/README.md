@@ -23,11 +23,15 @@ sidebarDepth: 2
 
 ## ภาษา CSS
 
-CSS หรือ Cascading Style Sheets นั้นทำหน้าในการ format รูปแบบของ HTML ที่จะแสดงผลบนหน้า web application โดยกลไกของ CSS นั้นประกอบไปด้วย selector และ declaration ซึ่ง CSS selector นั้นเป็นส่วนสำคัญที่ช่วยให้ web developer สามารถกำหนดได้ว่าส่วนไหนของ HTML นั้นที่ต้องการจะ apply CSS [รายละเอียด](/courses/is322/week-03.md)
+CSS หรือ Cascading Style Sheets นั้นทำหน้าที่ในการ format รูปแบบของ HTML ที่จะแสดงผลบนหน้า web application โดยกลไกของ CSS นั้นประกอบไปด้วย selector และ declaration ซึ่ง CSS selector นั้นเป็นส่วนสำคัญที่ช่วยให้ web developer สามารถกำหนดได้ว่าส่วนไหนของ HTML นั้นที่ต้องการจะ apply CSS [รายละเอียด](/courses/is322/week-03.md)
 
 ## เรียนรู้ภาษา JavaScript (JS)
 
+JS หรือ JavaScript นั้นทำหน้าที่ในการควบคุมเนื้อหาของเว็บเพจผ่าน HTML tag และรูปแบบการแสดงผลของ CSS กล่าวอีกอย่างหนึ่งคือ เป็นกลไกแกนหลักในการควบคุม web application โดย JS นั้นสามารถทำงานได้ทั้งบนฝั่ง client และฝั่ง server [รายละเอียด](/courses/is322/week-04.md)
+
 ## รู้จัก JavaScript Framework
+
+Framework คือ โครงร่างของ application ซึ่งมีการจัดเตรียม function พื้นฐานไว้ให้นักพัฒนาสามารถนำไปใช้ในการพัฒนา application ไม่ว่าจะเป็น web, mobile โดย framework นั้นจะช่วยให้นักพัฒนาสามารถใช้เวลาในการพัฒนาในส่วนของ business logic หรือ business function โดยที่ไม่ต้องกังวลในส่วนของ non-function ต่าง ๆ เช่น การจัดการ network, การควบคุมการแสดงผลของ browser และ mobile [รายละเอียด](/courses/is322/week-05.md)
 
 ## การเขียน Vue.js Components
 
