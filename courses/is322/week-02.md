@@ -40,7 +40,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 Vue.use(BootstrapVue);
 ```
 
-- แก้ไขไฟล์ main.js โดยเพิ่มบรรทัดที่ 3 ดังภาพ
+- แก้ไขไฟล์ main.js โดยเพิ่มบรรทัดที่ 3 และเติม ; ท้ายบรรทัดให้ครบ ดังภาพ
 
 ```js{3}
 import Vue from 'vue';
