@@ -41,6 +41,8 @@ vue create wk06-{เปลี่ยนชื่อด้วย}
     - QuestionSection.vue => ส่วนคำถาม
       - LikertSection.vue => component คำถามที่เป็นแบบ likert scale
 
+[ตัวอย่าง](/courses/is322/week-06-demo.md)
+
 ### 4. เริ่มสร้าง online questionnaire
 
 - สร้าง folder ชื่อ questionnaire ใน folder - src/components จากนั้นสร้างไฟล์ LikertQuestion.vue โดยมี content ตามด้านล่าง
@@ -305,7 +307,7 @@ git config --global user.email "MY_NAME@example.com"
 ```sh{3-4}
 git init
 git add .
-git commit -m "week 05 homework"
+git commit -m "week 06 homework"
 git remote add origin https://github.com/is322/wkxx-name.git
 git push -u origin master
 ```
