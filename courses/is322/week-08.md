@@ -35,9 +35,9 @@ vue create wk08-{เปลี่ยนชื่อด้วย}
 ### 2. เลือกใช้ CSS Framework สามารถใช้ได้ทั้ง
 
 - Bootstrap
-- Buefy
+- Buefy*
 
-แล้วแต่ถนัด
+แล้วแต่ถนัด (ตัวอย่างในบทนี้ใช้ Buefy ทั้งหมด)
 
 ### 3. ทำให้ component ที่เราสร้าง support v-model (ตัวอย่างที่ 1)
 
@@ -311,7 +311,7 @@ export const getters = {
 - สร้างไฟล์ store/modules/people/index.js โดยมีโค้ด ดังภาพ
 
 ```js
-mport { getters } from "./getters";
+import { getters } from "./getters";
 import { actions } from "./actions";
 import { mutations } from "./mutations";
 
@@ -556,6 +556,7 @@ git push -u origin master
 
 ## เอกสารอ้างอิง
 
-- [\[1\] Adding v-model Support to Custom Vue.js Components](<https://alligator.io/vuejs/add-v-model-support/>)
-- [\[2\] Creating a Global Event Bus with Vue.js](<https://alligator.io/vuejs/global-event-bus/>)
-- [\[3\] Managing state in Vue.js with Vuex](<https://itnext.io/managing-state-in-vue-js-with-vuex-f036fd71f432>)
+- [\[1\] Vuex - A state management pattern + library for Vue.js applications](<https://vuex.vuejs.org/>)
+- [\[2\] Adding v-model Support to Custom Vue.js Components](<https://alligator.io/vuejs/add-v-model-support/>)
+- [\[3\] Creating a Global Event Bus with Vue.js](<https://alligator.io/vuejs/global-event-bus/>)
+- [\[4\] Managing state in Vue.js with Vuex](<https://itnext.io/managing-state-in-vue-js-with-vuex-f036fd71f432>)
