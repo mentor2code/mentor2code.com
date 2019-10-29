@@ -106,7 +106,7 @@ export const mutations = {
       people.findIndex(
         item => {
           return item.title == person.title
-            && item.firstName == person.firstName 
+            && item.firstName == person.firstName
             && item.lastName == person.lastName;
         }), 1);
     Vue.set(state, "people", people);
@@ -299,5 +299,5 @@ export default {
 
 - [\[1\] Managing state in Vue.js with Vuex](<https://itnext.io/managing-state-in-vue-js-with-vuex-f036fd71f432>)
 - [\[2\] Get a full fake REST API with zero coding in less than 30 seconds (seriously)](<https://github.com/typicode/json-server>)
-- [\[3\] Vue.js REST API Consumption with Axios](https://alligator.io/vuejs/rest-api-axios/>)
+- [\[3\] Vue.js REST API Consumption with Axios](<https://alligator.io/vuejs/rest-api-axios/>)
 - [\[4\] Promise based HTTP client for the browser and node.js](<https://github.com/axios/axios>)

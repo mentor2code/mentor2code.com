@@ -1496,10 +1496,10 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap-vue@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.0.1.tgz#970d3de2fe2064e123507c59959e328afd66e8a7"
-  integrity sha512-mb2MP0f3KNRi/D8W0cItX2joM+XbwciFx1JKjtdKzt4uIXNx2SpOwF/wle26CszB1S35ArXJ/ZVN0dX8ry4yng==
+bootstrap-vue@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.0.4.tgz#9bf99754a22acece72e02adda3c7965b818ae2bc"
+  integrity sha512-/5WXa3ir5uajcs7ze7jz7QXpYuJGWHjvJ8biMq0+e0IIIxw2jSdh4LsiFKD7C7qtgKre28hhXOfx79RmZX4wcQ==
   dependencies:
     "@nuxt/opencollective" "^0.3.0"
     bootstrap ">=4.3.1 <5.0.0"
@@ -1609,13 +1609,6 @@ browserslist@^4.0.0, browserslist@^4.3.4, browserslist@^4.6.3:
     electron-to-chromium "^1.3.247"
     node-releases "^1.1.29"
 
-buefy@^0.8.4:
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/buefy/-/buefy-0.8.4.tgz#0c62d559e63aee8a18876ff90056f9a8b90f686f"
-  integrity sha512-hDUUKbKxQmtYlo/IPH9H+ewEN6KulpDxfNFIPvO5z3ukYqEG29psW6oFbJGisZDEIYGxqE2jMPcBOOjm8LxJVQ==
-  dependencies:
-    bulma "0.7.5"
-
 buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
@@ -1649,11 +1642,6 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
-
-bulma@0.7.5:
-  version "0.7.5"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.5.tgz#35066c37f82c088b68f94450be758fc00a967208"
-  integrity sha512-cX98TIn0I6sKba/DhW0FBjtaDpxTelU166pf7ICXpCCuplHWyu6C9LYZmL5PEsnePIeJaiorsTEzzNk3Tsm1hw==
 
 bytes@3.0.0:
   version "3.0.0"
