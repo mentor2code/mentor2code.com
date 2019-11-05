@@ -84,12 +84,12 @@ new Vue({
   - ในการกำหนดให้ vuelidate ทำงานจะต้องตั้งค่าตัวแปรทั้งที่ form, data function และ validations attribute ให้ตรงกัน ซึ่งในที่นี้คือ `form : {username: "", password: ""}`
     - ใน input form ให้กำหนดที่ v-model
     - ใน data function ให้ `return {}` ให้ตรงกัน
-    - ใน validations attribute สามารถกำหนด validators ให้แต่ละฟิลด์ได้ เช่น `username: {required, between(8, 30)}`
+    - ใน validations attribute สามารถกำหนด validators ให้แต่ละฟิลด์ได้ เช่น `username: {required, minLength: minLength(8)}`
   - ในขั้นถัดมา จะต้องทำการแสดงผลการ validate เพื่อให้ user ทราบว่าข้อมูลที่กรอกมานั้นไม่ตรงตามค่าที่กำหนดใดบ้าง
     - ตัวอย่างนี้ใช้ `<b-message></b-message>` ในการแสดงผล
     - ตัวแปร runtime ของ vuelidate ที่ใช้ในเบื้องต้นคือ `$v.form.$dirty` กับ `$v.form.$invalid` เพื่อเช็คว่า form ถูกกรอกข้อมูลหรือยังและข้อมูลนั้นผ่าน validation rules หรือไม่ จากนั้นจึงใช้ `v-if` มาช่วยในการแสดง message (ดูบรรทัดที่ 10)
     - นอกจากนี้สามารถใช้ `$v.form.username.required` เพื่อเช็คว่าข้อมูลที่ได้ถูกกรอกแล้วหรือไม่
-    - ต่อด้วย `$v.form.username.between` เพื่อเช็คว่าความยาวของ input ตรงหรือไม่
+    - ต่อด้วย `$v.form.username.minLength` เพื่อเช็คว่าความยาวขั้นต่ำของ input ว่าตรงหรือไม่
     - จากนั้นให้แสดงผลแจ้ง user ด้วย `v-if` ดังตัวอย่างในบรรทัดที่ 11, 16, 17 และ 21
     - สามารถเช็ค runtime variable ของ vuelidate จากบรรทัดที่ 28-33 ผ่านหน้า LoginPage
 
@@ -108,14 +108,14 @@ new Vue({
       <b-message
         type="is-danger"
         has-icon
-        v-if="!$v.form.username.between"
-      >ชื่อผู้ใช้ต้องอยู่ระหว่าง 8-30 ตัวอักษร</b-message>
+        v-if="!$v.form.username.minLength"
+      >ชื่อผู้ใช้ต้องไม่น้อยกว่า 8 ตัวอักษร</b-message>
       <b-message type="is-danger" has-icon v-if="!$v.form.password.required">กรุณาใส่รหัสผ่าน</b-message>
       <b-message
         type="is-danger"
         has-icon
-        v-if="!$v.form.password.between"
-      >รหัสผ่านต้องอยู่ระหว่าง 4-16 ตัวอักษร</b-message>
+        v-if="!$v.form.password.minLength"
+      >รหัสผ่านต้องไม่น้อยกว่า 4 ตัวอักษร</b-message>
     </b-field>
     <b-field class="buttons" grouped>
       <b-button type="is-primary" @click="touch">Login</b-button>
@@ -124,9 +124,9 @@ new Vue({
     <p>Dirty : {{ $v.form.$dirty }}</p>
     <p>Invalid : {{ $v.form.$invalid }}</p>
     <p>Require username: {{ $v.form.username.required }}</p>
-    <p>User name between 8-30: {{ $v.form.username.between }}</p>
+    <p>User name minLength 8: {{ $v.form.username.minLength }}</p>
     <p>Require password: {{ $v.form.password.required }}</p>
-    <p>Password between 4-16: {{ $v.form.password.between }}</p>
+    <p>Password minLength 4: {{ $v.form.password.minLength }}</p>
   </div>
 </template>
 <script>
@@ -150,11 +150,11 @@ export default {
     form: {
       username: {
         required,
-        between: between(8, 30)
+        minLength: minLength(8)
       },
       password: {
         required,
-        between: between(4, 16)
+        minLength: minLength(4)
       }
     }
   },
