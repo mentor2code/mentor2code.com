@@ -1,7 +1,7 @@
 ---
 title: IS613 Modern Business Management and Digital Technology
 lang: th-TH
-tobeListed: true
+tobeListed: false
 meta:
   - name: description
     content: IS613 Modern Business Management and Digital Technology

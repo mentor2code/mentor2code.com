@@ -37,7 +37,7 @@ Host List ข้างต้นนั้น เป็น static host ที่�
 yarn build
 
 # cd ไปยัง build output
-cd .vuepress/dist
+cd dist
 
 # สั่ง git เพื่อ init/add และ commit
 git init
@@ -45,10 +45,10 @@ git add -A
 git commit -m 'deploy'
 
 # ถ้าต้องการ deploy ไปที่ https://<USERNAME>.github.io ให้ uncomment คำสั่งด้านล่าง
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
+# git push -f https://github.com/<USERNAME>/<USERNAME>.github.io.git master
 
 # ถ้าต้องการ deploy ไปที่  https://<USERNAME>.github.io/<REPO> ให้ uncomment คำสั่งด้านล่าง
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+# git push -f https://github.com/<USERNAME>/<REPO>.git master:gh-pages
 ```
 
 ### 2. Catch up โปรเจ็ค
