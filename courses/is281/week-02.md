@@ -136,14 +136,16 @@ body {
 
 [Bootstrap](<https://getbootstrap.com/docs/4.4/getting-started/introduction/>) เป็น CSS Framework ที่ได้รับความนิยมในการนำมาใช้ปรับแต่ง HTML โดยเราสามารถที่จะนำ Bootstrap มาใช้ได้เพียงใส่ `<link>` ดังบรรทัดที่ 8
 
-```html{8}
+```html{8,10}
 <html>
   <head>
     <title>เว็บของวิชา IS281</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>Hello World</body>
