@@ -35,13 +35,30 @@ HTML หรือ Hyper Text Markup Language เป็นภาษาสำห�
 
 ## Excel (3)
 
+Graph / Charts
+
 ## Excel (4)
+
+Pivot Table
 
 ## Excel (5)
 
+Data Analysis
+
 ## Excel (6)
+
+Dashboard
+
+## Excel (7)
+
+Power Pivot
+
+## Excel (8)
+
+Macro
 
 ## เอกสารอ้างอิง
 
 - [HTML Tutorial](<https://www.w3schools.com/html/>)
 - [CSS Tutorial](<https://www.w3schools.com/css/default.asp>)
+- Alexander, M., Kusleika, R. and Walkenbach, J. (2019), Excel 2019 Bible, John Wiley & Sons, Indianapolis, IN.
