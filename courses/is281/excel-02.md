@@ -15,7 +15,7 @@ sidebarDepth: 3
 ## Excel - Formulas / Functions
 
 หลังจากที่ได้ศึกษา วิธีการจัดการข้อมูลในตารางไปแล้ว จากบทเรียนก่อนหน้า ในบทเรียนนี้จะกล่าวถึงสูตร (Formulas) และ
-การใช้ฟังก์ชั่น (Functions) ที่ทำหน้าที่ในการคำนวณข้อมูลในตารางของ Excel 
+การใช้ฟังก์ชั่น (Functions) ที่ทำหน้าที่ในการคำนวณข้อมูลในตารางของ Excel
 
 [ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่](/assets/is281/xls/02-Formulas-Functions.xlsx)
 
@@ -257,6 +257,12 @@ sidebarDepth: 3
 - SQRT()
 - POWER()
 - RAND()
+
+## วิดีโอสำหรับเรียนย้อนหลัง
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/VsiwdFw7dbA?autoplay=0&origin=https://mentor2code.com"
+  frameborder="0"></iframe>
 
 ## เอกสารอ้างอิง
 

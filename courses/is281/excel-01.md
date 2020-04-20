@@ -174,6 +174,12 @@ sidebarDepth: 3
 
 ![ตรวจสอบข้อมูล](/assets/is281/excel-01-24-input-validation.png)
 
+## วิดีโอสำหรับเรียนย้อนหลัง
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/eqEHubBSk0A?autoplay=0&origin=https://mentor2code.com"
+  frameborder="0"></iframe>
+
 ## เอกสารอ้างอิง
 
 - [1] Alexander, M., Kusleika, R. and Walkenbach, J. (2019), Excel 2019 Bible, John Wiley & Sons, Indianapolis, IN.

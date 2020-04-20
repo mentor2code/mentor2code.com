@@ -18,6 +18,12 @@ sidebarDepth: 3
 
 [ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่](/assets/is281/xls/03-Charts.xlsx)
 
+### วิดีโอสำหรับเรียนย้อนหลัง
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/waYa6-sBokQ?autoplay=0&origin=https://mentor2code.com"
+  frameborder="0"></iframe>
+
 ## เอกสารอ้างอิง
 
 - [1] Alexander, M., Kusleika, R. and Walkenbach, J. (2019), Excel 2019 Bible, John Wiley & Sons, Indianapolis, IN.

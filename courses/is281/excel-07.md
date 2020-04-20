@@ -16,6 +16,8 @@ sidebarDepth: 3
 
 การใช้งาน Power Pivot
 
+[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่]
+
 ## เอกสารอ้างอิง
 
 - [1] Alexander, M., Kusleika, R. and Walkenbach, J. (2019), Excel 2019 Bible, John Wiley & Sons, Indianapolis, IN.
