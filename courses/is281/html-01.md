@@ -39,17 +39,17 @@ HTML หรือ Hyper Text Markup Language เป็นภาษาสำห�
   - email => ใส่อีเมล์ที่ใช้งานจริง
   - password => ความยาวไม่น้อยกว่า 8 ตัวอักษร
 
-![GitHub sign up](/assets/is281/wk01-github.png)
+![GitHub sign up](/assets/is281/html-01-github.png)
 
 - สร้าง repository สำหรับ publish เว็บ
   - ไปที่เมนู Repositories แล้วกดปุ่ม New เพื่อสร้าง repository
   - กำหนดชื่อ repository เป็น **username.github.io** เท่านั้น
   - จากนั้นเช็คช่อง "Initialize this repository with a README" แล้วกดปุ่ม "Create repository"
   
-![Create github repo](/assets/is281/wk01-create-repo.png)
+![Create github repo](/assets/is281/html-01-create-repo.png)
 
 - เมื่อเสร็จแล้วจะได้ GitHub repository สำหรับเก็บโค้ด HTML
-![Initial github repo](/assets/is281/wk01-initial-repo.png)
+![Initial github repo](/assets/is281/html-01-initial-repo.png)
 
 - ทำสร้างไฟล์ index.html เพื่อทดสอบ โดยมีเนื้อหาตามด้านล่าง
 
@@ -72,33 +72,33 @@ HTML หรือ Hyper Text Markup Language เป็นภาษาสำห�
 - โดยให้เปลี่ยนรายละเอียด {ชื่อ นามสกุล} ใน `<title></title>`
 - พิมพ์ index.html ลงในช่อง ชื่อไฟล์
 
-![Create index.html](/assets/is281/wk01-create-index-html.png)
+![Create index.html](/assets/is281/html-01-create-index-html.png)
 
 - จากนั้นใส่ commit message แล้วกดปุ่ม "Commit new file"
 
-![Commit index.html](/assets/is281/wk01-commit-index-html.png)
+![Commit index.html](/assets/is281/html-01-commit-index-html.png)
 
 - ในหน้าแรกของ repository จะแสดงผลดังนี้
 
-![Repo with index.html](/assets/is281/wk01-repo-with-index-html.png)
+![Repo with index.html](/assets/is281/html-01-repo-with-index-html.png)
 
 - จากนั้นไปที่เมนู Settings และเลื่อนลงไปดูที่ Github Pages เพื่อตรวจสอบดูผลการ publish site โดยดูจากข้อความ "Your site is published at ..." ดังภาพ
 
-![Github Pages](/assets/is281/wk01-github-pages.png)
+![Github Pages](/assets/is281/html-01-github-pages.png)
 
 - จากนั้นคลิกที่ลิ้งค์เพื่อเข้าสู่หน้าเว็บ index.html ที่สร้างขึ้น
 
-![Github Pages](/assets/is281/wk01-github-io.png)
+![Github Pages](/assets/is281/html-01-github-io.png)
 
 ### 2. ใช้ CodePen เป็น Playground ในการเขียนเว็บ
 
 ในการเขียนเว็บด้วย HTML นั้นจะต้องใช้ Editor หรือ IDE ในการเขียน โดยปกติแล้วจะเป็น application ที่ถูกติดตั้งในคอมพิวเตอร์ เช่น [Visual Studio Code](https://code.visualstudio.com/) หรือ [Notepad++](https://notepad-plus-plus.org/downloads/) ซึ่งเหมาะกับ serious developer ที่ใช้ในการเขียนเว็บ สำหรับในการเรียนในชั้นเรียนนั้น มีอีกทางเลือก ก็คือ การใช้ HTML Playground ซึ่งสามารถเขียนเว็บและแสดงผลได้ทันที โดยในที่นี้เราจะใช้ [CodePen](https://codepen.io/)
 
-![CodePen](/assets/is281/wk01-codepen-io.png)
+![CodePen](/assets/is281/html-01-codepen-io.png)
 
 ตัวอย่างการใช้ CodePen เพื่อแสดงผลโค้ด HTML ตัวอย่างที่เราเพิ่งสร้าง
 
-![CodePen](/assets/is281/wk01-codepen-new-pen.png)
+![CodePen](/assets/is281/html-01-codepen-new-pen.png)
 
 ทดลองตัวอย่างจากบทเรียนของ [W3Schools](https://www.w3schools.com/) โดยใช้ CodePen
 
@@ -109,7 +109,7 @@ HTML หรือ Hyper Text Markup Language เป็นภาษาสำห�
 
 เราสามารถใช้ Dev Tools ของ Google Chrome เพื่อช่วยในการตรวจสอบการทำงานของโค้ด HTML ของเราได้ว่ามีข้อผิดปกติอย่างไรดังภาพ
 
-![CodePen](/assets/is281/wk01-chrome-devtools.png)
+![CodePen](/assets/is281/html-01-chrome-devtools.png)
 
 ## Individual Assignment
 

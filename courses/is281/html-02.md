@@ -24,44 +24,44 @@ sidebarDepth: 3
 
 - โดยเราสามารถสร้าง Organisation ได้โดยการกดที่ + ด้านบนขวามีอ
 
-![GitHub - Create Organisation](/assets/is281/wk02-create-org.png)
+![GitHub - Create Organisation](/assets/is281/html-02-create-org.png)
 
 - จากนั้นให้เลือก Plan โดยเราสามารถเลือกแบบ Team for Open Source ซึ่ง GitHub ให้บริการฟรีได้
 
-![GitHub - Choose Plan](/assets/is281/wk02-choose-plan.png)
+![GitHub - Choose Plan](/assets/is281/html-02-choose-plan.png)
 
 - จากนั้นให้ใส่
   - Organisation Name ซึ่งชื่อนี้จะต้องไม่ซ้ำกับชื่อที่มีอยู่แล้วบน GitHub
   - Contact Email โดยให้ใส่อีเมล์ของตัวแทนหลักของทีม
   - เลือกเป็นแบบ Personal Account
 
-![GitHub - Enter Details](/assets/is281/wk02-enter-org-details.png)
+![GitHub - Enter Details](/assets/is281/html-02-enter-org-details.png)
 
 - เมื่อสร้าง Organisation เรียบร้อย GitHub จะถามให้เรา invite members ซึ่งเราสามารถที่จะ invite ตอนนี้หรือ skip ไปทำภายหลังก็ได้
 
-![GitHub - Complete Creating Organisation](/assets/is281/wk02-complete-org.png)
+![GitHub - Complete Creating Organisation](/assets/is281/html-02-complete-org.png)
 
 - เมื่อเรียบร้อยแล้วจะเข้าสู่หน้า Home ของ Organisation ซึ่งส่วนนี้จะแตกต่างจากหน้า Home ของแต่ละผู้ใช้ เพราะจะเป็นส่วนที่ทีมสามารถเข้ามาทำงานร่วมกันได้
 
-![GitHub - Organisation Home](/assets/is281/wk02-org-home.png)
+![GitHub - Organisation Home](/assets/is281/html-02-org-home.png)
 
 - เราสามารถเพิ่มผู้ใช้ GitHub คนอื่นเพื่อเข้ามาร่วมทีม
   - ไปที่ Tab => People แล้วกดปุ่ม invite members
   - จากนั้นให้พิมพ์ชื่อ GitHub User ที่ต้องการเพิ่ม
   - ให้เลือก Role เป็น Owner เพื่อให้สมาชิกทุกคนในทีมมีสิทธิ์ในการแก้ไขเท่ากัน
 
-![GitHub - Invite members](/assets/is281/wk02-invite-members.png)
+![GitHub - Invite members](/assets/is281/html-02-invite-members.png)
 
 - เราสามารถสร้าง repository สำหรับเก็บเว็บไซต์ของทีม หรือ Organisation ของเราได้
   - ขั้้นตอนเหมือนกับการสร้าง Repository ส่วนตัว แตกต่างกันเพียงแค่ต้องสร้าง Repository ในระดับ Organisation
   - เมื่อกด New Repository แล้วให้ตรวจสอบว่า Owner เป็น Organisation ที่เราสร้าง และ Repository Name ต้องอยู่ในรูปของ organisation-name.github.io
   - กด Create Repository
 
-![GitHub - Create Organisation Repository](/assets/is281/wk02-create-org-repo.png)
+![GitHub - Create Organisation Repository](/assets/is281/html-02-create-org-repo.png)
 
 - เมื่อสร้าง Repository สำหรับ Host เว็บของ Organisation เรียบร้อย จะได้ผลดังภาพ
 
-![GitHub - Organisation Main Repository](/assets/is281/wk02-main-repo.png)
+![GitHub - Organisation Main Repository](/assets/is281/html-02-main-repo.png)
 
 - ขั้นตอนถัดไปเราสามารถที่จะเข้าไปที่ Repository ของ Organisation เพื่อสร้างไฟล์ HTML, CSS
 

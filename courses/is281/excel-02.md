@@ -1,25 +1,25 @@
 ---
-title: Excel (2)
+title: Excel - Formulas / Functions
 lang: th_TH
 tobeListed: false
 meta:
   - name: description
     content: Excel
   - name: keywords
-    content: Functions / Formulas
+    content: Functions, Formulas
 sidebar: auto
 sidebarDepth: 3
 ---
 [กลับหน้าแรกของคอร์ส](/courses/is281/)
 
-## Excel - การใช้งานฟังก์ชั่น Functions
+## Excel - Formulas / Functions
 
 หลังจากที่ได้ศึกษา วิธีการจัดการข้อมูลในตารางไปแล้ว จากบทเรียนก่อนหน้า ในบทเรียนนี้จะกล่าวถึงสูตร (Formulas) และ
 การใช้ฟังก์ชั่น (Functions) ที่ทำหน้าที่ในการคำนวณข้อมูลในตารางของ Excel ซึ่งโดยปกติแล้ว ถ้าเราพิมพ์ข้อมูลลงไปตรง ๆ ข้อมูลนั้นจะเป็น `ค่าคงที่` แต่ถ้าหากเราต้องการให้เซลล์ใดเซลล์หนึ่งแสดงผลจากการคำนวณ เราสามารถใช้ `สูตรคำนวณ` หรือ `Excel Formulas` ได้โดยการเริ่มด้วยเครื่องหมาย `=` ในเซลล์นั้น ๆ
 
 หรือเราต้องการใช้ฟังก์ชั่นของ Excel ในการคำนวณค่าต่าง ๆ เราก็สามารถทำได้โดยการพิมพ์ `=` แล้วตามด้วยชื่อฟังก์ชั่น หรืออาจจะกดที่เครื่องหมาย `fx` ใน Formula bar ดังภาพ
 
-![Excel Formula](/assets/is281/wk12-01-formula.png)
+![Excel Formula](/assets/is281/excel-02-01-formula.png)
 
 ตัวอย่างเช่น
 
@@ -118,11 +118,11 @@ sidebarDepth: 3
 
 ในการใช้ฟังก์ชั่นของ Excel เราสามารถใช้งานผ่าน Formula Builder ของ Excel ได้โดยการกด `fx` จากนั้น Excel ก็จะทำการแสดงฟังก์ชั่นที่ใช้บ่อยขึ้นมา ดังภาพ
 
-![Excel Formula Builder](/assets/is281/wk12-02-formula-builder.png)
+![Excel Formula Builder](/assets/is281/excel-02-02-formula-builder.png)
 
 โดยในการใช้งานฟังก์ชั่นของ Excel นั้น ตัว Formula Builder เองก็จะแสดงวิธีใช้และวิธีการป้อนค่า arguments ให้ ตัวอย่างเช่น ฟังก์ชั่น `SUM()` Excel ตัวช่วยในการป้อนข้อมูล ซึ่งหากเราจะใส่ arguments เป็นช่วงของเซลล์ เราก็สามารถที่จะทำการลากช่วงเซลล์ได้เลย ดังภาพ
 
-![Excel Sum](/assets/is281/wk12-03-formula-sum.png)
+![Excel Sum](/assets/is281/excel-02-03-formula-sum.png)
 
 นอกจากการใช้ Formula Builder แล้ว เรายังสามารถใช้ Tab - Formulas ที่ Ribbons เพื่อเลือกใช้ฟังก์ชั่นตามประเภทได้ โดย Excel ได้แบ่งฟังก์ชั่นออกเป็น
 
@@ -136,7 +136,7 @@ sidebarDepth: 3
 - ฟังก์ชั่นทางคณิตศาสตร์ Maths & Trig
 - ฟังก์ชั่นอื่น ๆ
 
-![Excel Formula Ribbon](/assets/is281/wk12-04-formula-ribbon.png)
+![Excel Formula Ribbon](/assets/is281/excel-02-04-formula-ribbon.png)
 
 ### หลักการทำ Cell References
 
@@ -257,6 +257,6 @@ sidebarDepth: 3
 ## เอกสารอ้างอิง
 
 - [1] Alexander, M., Kusleika, R. and Walkenbach, J. (2019), Excel 2019 Bible, John Wiley & Sons, Indianapolis, IN.
-- [2] [Overview of Formulas in Excel](<https://support.office.com/en-us/article/overview-of-formulas-in-excel-ecfdc708-9162-49e8-b993-c311f47ca173?wt.mc_id=fsn_excel_formulas_and_functions>)
-- [3] [Formulas and functions](<https://support.office.com/en-us/article/formulas-and-functions-294d9486-b332-48ed-b489-abe7d0f9eda9?ui=en-US&rs=en-US&ad=US#ID0EAABAAA=Functions>)
-- [4] [Data](<https://media.wiley.com/product_ancillary/89/11195147/DOWNLOAD/Complete%20book_Worksheet.zip>)
+- [2] [Data](<https://media.wiley.com/product_ancillary/89/11195147/DOWNLOAD/Complete%20book_Worksheet.zip>)
+- [3] [Overview of Formulas in Excel](<https://support.office.com/en-us/article/overview-of-formulas-in-excel-ecfdc708-9162-49e8-b993-c311f47ca173?wt.mc_id=fsn_excel_formulas_and_functions>)
+- [4] [Formulas and functions](<https://support.office.com/en-us/article/formulas-and-functions-294d9486-b332-48ed-b489-abe7d0f9eda9?ui=en-US&rs=en-US&ad=US#ID0EAABAAA=Functions>)
