@@ -18,18 +18,12 @@ sidebarDepth: 3
 
 [ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่]
 
-### การจัดการรูปแบบของข้อมูลใน Excel
+## วิดีโอสำหรับเรียนย้อนหลัง
 
-รูปแบบข้อมูลหลัก ๆ จะมี
-
-- ตัวเลข Numberic Value
-- ตัวอักษร Text
-- ฟังก์ชั่น หรือ สูตร Function / Formula
-- ค่าผิดพลาด Error
-
-เราสามารถกำหนดประเภทของข้อมูลในตารางได้ดังภาพ
-
-![ประเภทของข้อมูลใน Excel](/assets/is281/excel-01-01-data-type.png)
+TBD
+<!-- <iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/waYa6-sBokQ?autoplay=0&origin=https://mentor2code.com"
+  frameborder="0"></iframe> -->
 
 ## เอกสารอ้างอิง
 
