@@ -1,22 +1,22 @@
 ---
-title: Excel - Graphs and Charts
+title: Excel - Dashboard
 lang: th_TH
 tobeListed: false
 meta:
   - name: description
-    content: Excel - Graphs and Charts
+    content: Excel - Dashboard
   - name: keywords
-    content: Graphs, Charts
+    content: Dashboard
 sidebar: auto
 sidebarDepth: 3
 ---
 [กลับหน้าแรกของคอร์ส](/courses/is281/)
 
-## Excel - Graphs and Charts
+## Excel - Dashboard
 
-การสร้างกราฟและชาร์ตใน Excel เพื่อช่วยในการ Visualise ข้อมูล
+การสร้าง Dashboard เพื่อสรุปข้อมูลสำหรับผู้บริหาร
 
-[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่](/assets/is281/xls/03-Charts.xlsx)
+[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่]
 
 ## เอกสารอ้างอิง
 

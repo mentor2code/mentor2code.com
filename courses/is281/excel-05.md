@@ -1,22 +1,22 @@
 ---
-title: Excel - Graphs and Charts
+title: Excel - Data Analysis
 lang: th_TH
 tobeListed: false
 meta:
   - name: description
-    content: Excel - Graphs and Charts
+    content: Excel - Data Analysis
   - name: keywords
-    content: Graphs, Charts
+    content: Data Analysis
 sidebar: auto
 sidebarDepth: 3
 ---
 [กลับหน้าแรกของคอร์ส](/courses/is281/)
 
-## Excel - Graphs and Charts
+## Excel - Data Analysis
 
-การสร้างกราฟและชาร์ตใน Excel เพื่อช่วยในการ Visualise ข้อมูล
+การทำวิเคราะห์ข้อมูลด้วย Excel
 
-[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่](/assets/is281/xls/03-Charts.xlsx)
+[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่]
 
 ## เอกสารอ้างอิง
 

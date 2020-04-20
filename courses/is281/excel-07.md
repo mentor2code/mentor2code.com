@@ -1,22 +1,20 @@
 ---
-title: Excel - Graphs and Charts
+title: Excel - Power Pivot
 lang: th_TH
 tobeListed: false
 meta:
   - name: description
-    content: Excel - Graphs and Charts
+    content: Excel - Power Pivot
   - name: keywords
-    content: Graphs, Charts
+    content: Power Pivot
 sidebar: auto
 sidebarDepth: 3
 ---
 [กลับหน้าแรกของคอร์ส](/courses/is281/)
 
-## Excel - Graphs and Charts
+## Excel - Power Pivot
 
-การสร้างกราฟและชาร์ตใน Excel เพื่อช่วยในการ Visualise ข้อมูล
-
-[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่](/assets/is281/xls/03-Charts.xlsx)
+การใช้งาน Power Pivot
 
 ## เอกสารอ้างอิง
 

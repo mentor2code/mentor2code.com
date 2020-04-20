@@ -4,7 +4,7 @@ lang: th_TH
 tobeListed: false
 meta:
   - name: description
-    content: Excel
+    content: Excel - Data Table
   - name: keywords
     content: Data Table
 sidebar: auto
@@ -15,6 +15,8 @@ sidebarDepth: 3
 ## Excel - Data Table
 
 พื้นฐานการจัดการข้อมูลในแบบตาราง (Spreadsheet) ไม่ว่าจะเป็นการ input / edit / delete รวมไปถึงการบริหารจัดการข้อมูล เช่น การ format รูปแบบข้อมูลตารางตามเงื่อนไข
+
+[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่](/assets/is281/xls/01-Intro-DataTable.xlsx)
 
 ### การจัดการรูปแบบของข้อมูลใน Excel
 
