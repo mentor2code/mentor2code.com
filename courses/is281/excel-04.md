@@ -112,10 +112,9 @@ Pivot Table นั้นสามารถปรับเงื่อนไข �
 
 ## วิดีโอสำหรับเรียนย้อนหลัง
 
-TBD
-<!-- <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/embed/waYa6-sBokQ?autoplay=0&origin=https://mentor2code.com"
-  frameborder="0"></iframe> -->
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/9DUPHmen4xM?autoplay=0&origin=https://mentor2code.com"
+  frameborder="0"></iframe>
 
 ## เอกสารอ้างอิง
 
