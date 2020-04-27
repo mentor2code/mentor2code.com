@@ -18,7 +18,7 @@ sidebarDepth: 3
 
 [ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่ - What-If Analysis](</assets/is281/xls/05-DataAnalysisWhatIf.xlsx>)
 
-[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่ - Solver]
+[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่ - Solver/Analysis Toolpak](</assets/is281/xls/05-DataAnalysisSolverATP.xlsx>)
 
 ### What-If Analysis
 
@@ -121,11 +121,129 @@ sidebarDepth: 3
 
 ### Solver
 
-ในการทำ What-If Analysis ด้วย Goal Seek นั้นมีข้อจำกัด คือ ไม่สามารถกำหนดการปรับเปลี่ยนค่าในหลาย ๆ เซลล์ได้ หรืออาจจะถึงขั้นวิเคราะห์ย้อนกลับแบบหลาย ๆ Scenarios ซึ่ง Solver เป็นฟีเจอร์ของ Excel ที่เข้ามาตอบโจทย์นี้...
+ในการทำ What-If Analysis ด้วย Goal Seek นั้นมีข้อจำกัด คือ ไม่สามารถกำหนดการปรับเปลี่ยนค่าในหลาย ๆ เซลล์ได้ หรืออาจจะถึงขั้นวิเคราะห์ย้อนกลับแบบหลาย ๆ Scenarios ซึ่ง Solver เป็นฟีเจอร์ของ Excel ที่เข้ามาตอบโจทย์นี้ โดย Solver สามารถที่จะ
 
-### Analysis Toolpack
+- กำหนดให้ปรับค่าได้หลาย ๆ เซลล์
+- กำหนดเงื่อนไขให้ค่าที่จะปรับในแต่ละเซลล์ได้
+- หา solution ได้ทั้งแบบ maximise และ minimise
+- หาคำตอบได้หลายทางเลือกให้คำโจทย์ที่ต้องการจะแก้
 
-TBD
+อย่างไรก็ตาม Solver นั้นยังทำงานไม่สมบูรณ์ใน Excel เวอร์ชั่นอื่น ๆ ที่ไม่ใช่ Windows
+
+[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่ - Solver/Analysis Toolpak](</assets/is281/xls/05-DataAnalysisSolverATP.xlsx>)
+
+#### ตัวอย่าง Solver - Three Products
+
+ตัวอย่างนี้จะแสดงการคำนวณกำไรจากผลิตภัณฑ์สามตัว ซึ่งมีจำนวนหน่วย กำไรต่อหน่วย และกำไรต่อผลิตภัณฑ์ (คำนวณจากการเอาจำนวนหน่วย x กำไรต่อหน่วย) ดังภาพ
+
+![Data Analysis: Solver](</assets/is281/excel-05-17-solver.png>)
+
+หากมองดูผิวเผินก็จะเห็นว่า Product C นั้นทำกำไรสูงสูด แต่ในสถานการณ์จริงนั้น จะมีเงื่อนไขต่าง ๆ ที่มาเป็นตัวกำหนดในการผลิต ดังนี้
+
+- จำนวนการผลิตทั้งหมดต้องเป็น 300 หน่วย
+- มีความต้องการ Product A จำนวน 50 หน่วย จากยอดสั่งซื้อเดิม
+- มีความต้องการ Product B จำนวน 40 หน่วย จากการคาดการณ์
+- เนื่องจาก Demands ไม่มากจึงควรผลิต Product C ไม่เกิน 40 หน่วย
+
+จากเงื่อนไขข้างต้น เราสามารถใช้ Solver ในการคำนวณหาหน่วยการผลิตได้ ดังนี้
+
+- ไปที่ Ribbon => Data => Solver
+
+![Data Analysis: Solver](</assets/is281/excel-05-18-solver.png>)
+
+- จากนั้นให้ทำการกำหนดค่าพารามิเตอร์ต่าง ๆ ให้ Solver ดังนี้
+  - กำหนดเป้าหมายที่ Set Objective ในที่นี้คือ Total Profit ที่ `D6`
+  - โดยกำหนดให้ To เป็น `Max` ซึ่งก็คือกำไรสูงสุด
+  - กำหนดให้ Changing Variable Cells เป็น `B3:B5` ซึ่งก็คือ จำนวนสินค้าที่จะผลิต
+  - จากนั้นกำหนดเงื่อนไขต่าง ๆ
+    - Product A : `B3` >= 50
+    - Product B : `B4` >= 40
+    - Product C : `B5` <= 40
+    - Total Product : `B6` <= 300
+  - เลือก Solving Method เป็น Simplex LP
+  
+![Data Analysis: Solver](</assets/is281/excel-05-19-solver.png>)
+
+- จากนั้นกด Solve แล้ว Solver ก็จะทำการคำนวณ จำนวนการผลิตที่ให้ได้กำไรสูงสุด ภายใต้เงื่อนไขต่าง ๆ ที่กำหนด ได้ผลดังภาพ
+
+![Data Analysis: Solver](</assets/is281/excel-05-20-solver.png>)
+
+#### ตัวอย่าง Solver - Investment Portfolio (Excel for Windows only)
+
+ตัวอย่างถัดมา เป็นการจัดการ portfolio การลงทุนอย่างง่าย ๆ โดยมีเงื่อนไข ดังต่อไปนี้
+
+- การลงทุนใน New car loans ต้องเป็น 3 เท่าของ Used car loans
+- การลงทุนใน Car loans ทั้งสองแบบต้องมากกว่า 15% ของทั้งพอร์ต
+- Unsecured loans ไม่ควรเกิน 25% ของ Portfolio
+- อย่างน้อย 10% ของ Portfolio ควรเป็นการลงทุนใน Bank CDs
+- ยอดเงินลงทุนทั้งหมดคือ $5,000,000
+- การลงทุนทั้งหมดควรจะได้ผลตอบแทนในแดนบวก หรือเท่าทุน
+
+![Data Analysis: Solver](</assets/is281/excel-05-21-solver.png>)
+
+- จากนั้นให้ทำการกำหนดค่าพารามิเตอร์ต่าง ๆ ให้ Solver ดังนี้
+  - กำหนดเป้าหมายที่ Set Objective ในที่นี้คือ Total Yeild ที่ `D12`
+  - โดยกำหนดให้ To เป็น `Max` ซึ่งก็คือกำไรสูงสุด
+  - กำหนดให้ Changing Variable Cells เป็น `C5:C9` ซึ่งก็คือ จำนวนเงินลงทุน
+  - จากนั้นกำหนดเงื่อนไขต่าง ๆ
+    - ยอดรวมเงินลงทุน : `C10` = `B1`
+    - การลงทุนใน New car loans : `C5` >= `C6*3`
+    - เงินลงทุนใน Auto Loan : `D14` >= 0.15
+    - เงินลงทุนใน Unsecured Loan : `E8` <= 0.25
+    - เงินลงทุนใน Bank CDs : `E9` >= 0.1
+  - เลือก Make Unconstrained Variables Non-Negative
+  - เลือก Solving Method เป็น GRG Nonlinear
+
+![Data Analysis: Solver](</assets/is281/excel-05-22-solver.png>)
+
+- จากนั้นกด Solve แล้ว Solver ก็จะทำการคำนวณ % Total Yeild สูงสุด ภายใต้เงื่อนไขต่าง ๆ ที่กำหนด ได้ผลดังภาพ
+
+![Data Analysis: Solver](</assets/is281/excel-05-23-solver.png>)
+
+***หมายเหตุ*** ตัวอย่างนี้ไม่สามารถใช้กับ Excel for Mac ได้
+
+### Analysis Toolpak
+
+Analysis Toolpak เป็นส่วนเสริมของ Excel ที่ช่วยในการวิเคราะห์เชิง Scientific, Engineering, Statistics ซึ่งถือเป็นการวิเคราะห์ในขั้นสูง และต้องการพื้นฐานความรู้ในเชิงทฤษฎี จึงจะสามารถใช้งานได้ ส่วนการใช้งาน Analysis Toolpak ในบางกรณีอาจจะต้องทำการติดตั้งเพิ่มเติม ซึ่งสามารถหาวิธีติดตั้งได้จากอินเตอร์เน็ต
+
+ในบทเรียนนี้จะเป็นการแนะนำการใช้งาน Analysis Toolpak อย่างง่าย ๆ
+
+#### ตัวอย่าง Analysis Toolpak
+
+ข้อมูลดังภาพด้านล่างเป็นตัวอย่างคะแนนของ นักเรียนสองกลุ่ม โดยเราสามารถทำการวิเคราะห์ Descriptive Statistics โดยการไปที่ Data => Data Analysis
+
+![Data Analysis: ATP](</assets/is281/excel-05-24-atp.png>)
+
+เมื่อเลือก Descriptive Statistics แล้วจะต้องกรอก Input ดังนี้
+
+- Input Range: `A1:B10`
+- เลือก Labels in first row
+- เลือก Output Rage: `D1`
+- เลือก Summary statistics
+
+![Data Analysis: ATP](</assets/is281/excel-05-25-atp.png>)
+
+เมื่อกด OK แล้วจะได้ตาราง Descriptive Statistics ดังภาพ
+
+![Data Analysis: ATP](</assets/is281/excel-05-26-atp.png>)
+
+ถัดไปจะเป็นการทดสอบความแปรปรวน F-Test ของนักเรียนทั้งสองกลุ่ม เพื่อวิเคราะห์ว่า ทั้งสองกลุ่มมีความแตกต่างกัน ในเชิงสถิติหรือไม่ โดยเลือก F-Test Two-Sample for Variances ดังภาพ
+
+![Data Analysis: ATP](</assets/is281/excel-05-27-atp.png>)
+
+จากนั้นกำหนด Input ของ F-Test ดังนี้
+
+- Variable 1 Range: `A1:A10`
+- Variable 2 Range: `B1:B10`
+- เลือก Label
+- Alpha: `0.05`
+- Output Range: `D1`
+
+![Data Analysis: ATP](</assets/is281/excel-05-28-atp.png>)
+
+เมื่อกด OK แล้วก็จะได้ผลการวิเคราะห์ F-Test ดังภาพ โดยในกรณีนี้ สามารถสรุปได้ว่า ทั้งสองกลุ่มมีความแตกต่างกันในทางสถิติ โดยดูจากค่า P ในเซลล์ `E9` ที่มีค่าน้อยกว่า 0.05
+
+![Data Analysis: ATP](</assets/is281/excel-05-29-atp.png>)
 
 ## วิดีโอสำหรับเรียนย้อนหลัง
 
@@ -134,6 +252,14 @@ TBD
 <iframe id="ytplayer" type="text/html" width="640" height="360"
   src="https://www.youtube.com/embed/Jacoe6q9G44?autoplay=0&origin=https://mentor2code.com"
   frameborder="0"></iframe>
+
+### Clip: Solver / Analysis Toolpak
+
+TBD
+
+<!-- <iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/Jacoe6q9G44?autoplay=0&origin=https://mentor2code.com"
+  frameborder="0"></iframe> -->
 
 ## เอกสารอ้างอิง
 
