@@ -255,11 +255,9 @@ Analysis Toolpak เป็นส่วนเสริมของ Excel ที�
 
 ### Clip: Solver / Analysis Toolpak
 
-TBD
-
-<!-- <iframe id="ytplayer" type="text/html" width="640" height="360"
-  src="https://www.youtube.com/embed/Jacoe6q9G44?autoplay=0&origin=https://mentor2code.com"
-  frameborder="0"></iframe> -->
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/TbCraL5KI_s?autoplay=0&origin=https://mentor2code.com"
+  frameborder="0"></iframe>
 
 ## เอกสารอ้างอิง
 

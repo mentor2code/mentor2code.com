@@ -264,8 +264,16 @@ sidebarDepth: 3
 
 ## วิดีโอสำหรับเรียนย้อนหลัง
 
+### Formulas / Functions
+
 <iframe id="ytplayer" type="text/html" width="640" height="360"
   src="https://www.youtube.com/embed/VsiwdFw7dbA?autoplay=0&origin=https://mentor2code.com"
+  frameborder="0"></iframe>
+
+### Lookup Function
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/yLw3l7POz5Q?autoplay=0&origin=https://mentor2code.com"
   frameborder="0"></iframe>
 
 ## เอกสารอ้างอิง
