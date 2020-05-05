@@ -14,9 +14,15 @@ sidebarDepth: 3
 
 ## Excel - Dashboard
 
-การสร้าง Dashboard เพื่อสรุปข้อมูลสำหรับผู้บริหาร
+การสร้าง Dashboard
 
-[ดาวน์โหลดไฟล์ประกอบการเรียนได้ที่นี่]
+- แดชบอร์ด คืออะไร...What is Dashboard?
+- การเตรียมการสำหรับแดชบอร์ดโปรเจ็ค...Preparation for a Dashboard Project
+- แนวปฏิบัติ...Best Practices
+- หลักการออกแบบ...Design Principles
+- ตัวอย่าง...Examples
+
+[ดาวน์โหลดเอกสารประกอบการเรียนได้ที่นี่](</assets/is281/xls/06-Dashboard.pdf>)
 
 ## วิดีโอสำหรับเรียนย้อนหลัง
 
