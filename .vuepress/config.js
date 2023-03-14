@@ -13,7 +13,7 @@ module.exports = {
     nav: [
       { text: "หน้าแรก", link: "/" },
       { text: "คอร์ส", items: buildCourseItems() },
-      { text: "บทความ", items: buildBlogItems() },
+      { text: "บทความ", link: '/blogs/' },
     ]
   }
 };
@@ -27,8 +27,8 @@ function buildBlogItems() {
 function buildCourseItems() {
   return [
     { text: "IS281 Tools for Empowering End Users", link: "/courses/is281/" },
-    { text: "IS315 Information System Analysis", link: "/courses/is315/" },
-    { text: "IS415 Information System Design", link: "/courses/is415/" },
+    // { text: "IS315 Information System Analysis", link: "/courses/is315/" },
+    // { text: "IS415 Information System Design", link: "/courses/is415/" },
     { text: "IS322 Application Development Tool (B)", link: "/courses/is322/" },
     { text: "IS457 Advanced Database Management", link: "/courses/is457/" },
     // { text: "IS613 Modern Business Management and Digital Technology", link: "/courses/is613/" },

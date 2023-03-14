@@ -4,13 +4,13 @@
   "author": "Winai Nadee",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build"
   },
   "devDependencies": {
-    "vuepress": "^1.2"
+    "vuepress": "^1.9.9"
   },
   "dependencies": {
-    "bootstrap-vue": "^2.0.4"
+    "bootstrap-vue": "^2.23.1"
   }
 }

@@ -1,7 +1,7 @@
 ---
 title: IS415 Information System Design
 lang: th-TH
-tobeListed: true
+tobeListed: false
 meta:
   - name: description
     content: การออกแบบระบบ โดยรวมถึง Prototyping, แนวคิด DevOps, การ implement ระบบบน Container Platform, การทำ Continuous Integration และ Delivery
